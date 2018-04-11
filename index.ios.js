@@ -1,21 +1,27 @@
 
 // // Import libraries 
 // import React from 'react'
-// import { Text, AppRegistry } from 'react-native'
+// import { AppRegistry, View } from 'react-native'
+// import Header from './src/components/component_header'
+// import AlbumList from './src/components/component_album_list'
 
 // // Create a component
 
-// const App = () => {
-// 	return(
-// 		<Text> React Native App </Text>
-// 	)
-// }
+// const App = () => (
+// 	<View>
+// 		<Header headerText={'Albums'} />
+// 		<AlbumList />
+// 		{console.log('WORS WORKS WORKS')}
+// 	</View>		
+// )
 
+	
 // //Implicit return if only return JSX	
 // AppRegistry.registerComponent('ReactNativeAlbums', () => App)
 // // () => implicit return App
 
-//Where does index.ios.js come from in the tutorial and what is its utility? 
+
+
 
 
 
