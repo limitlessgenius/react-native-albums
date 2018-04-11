@@ -11,7 +11,6 @@ const App = () => (
 	<View>
 		<Header headerText={'Albums'} />
 		<AlbumList />
-		{console.log('WORS WORKS WORKS')}
 	</View>		
 )
 
