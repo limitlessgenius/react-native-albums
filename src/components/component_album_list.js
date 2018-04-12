@@ -24,11 +24,7 @@ class AlbumList extends Component {
 			return (
 				<AlbumDetail 
 					key={album.title} 
-					albumArtist={album.artist}
-					albumTitle={album.title}
-					albumImage={album.image}
-					albumThumbnail={album.thumbnail_image}
-					albumUrl={album.url}
+					album={album}
 				/>	
 			)
 		})

@@ -1,11 +1,21 @@
 
 
 import React from 'react'
-import { View, Text } from 'react-native'
+import { View, Text, Button, Image } from 'react-native'
 
-const AlbumDetail = ({albumArtist, albumTitle, albumImage, albumThumbnail, albumUrl}) => {
+import Card from './component_card'
 
-	return (<Text>Album Detail</Text>)
+const AlbumDetail = (props) => {
+
+	console.log(props.album.title)
+
+	return (
+		<Card>
+
+			<Text>{props.album.title}</Text>
+			
+		</Card>
+	)
 }
 
 export default AlbumDetail
