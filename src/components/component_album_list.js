@@ -19,10 +19,16 @@ class AlbumList extends Component {
 		.then(albums => this.setState({ albums }) )
 	}
 
+	renderAlbums() {
+		return this.state.albums.map(album => {
+			return <Text key={album.title}>{album.title}</Text>
+		})
+	}
+
 	render() {
 		return(
-			<View> 
-				<AlbumDetail />
+			<View>
+				{this.renderAlbums()}	
 			</View>
 		)	
 	}
