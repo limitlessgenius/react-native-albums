@@ -2,6 +2,7 @@
 
 import React, { Component } from 'react'
 import { View, Text } from 'react-native'
+import AlbumDetail from './component_album_detail'
 
 class AlbumList extends Component {
 
@@ -21,7 +22,7 @@ class AlbumList extends Component {
 	render() {
 		return(
 			<View> 
-				<Text> · ALBUM LIST RENDERING · </Text>
+				<AlbumDetail />
 			</View>
 		)	
 	}
