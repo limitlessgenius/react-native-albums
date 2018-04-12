@@ -3,12 +3,9 @@
 import React from 'react'
 import { View, Text } from 'react-native'
 
-const AlbumDetail = () => {
-	return (
-		<View>
-			<Text>Video Detail</Text>
-		</View>
-	)
+const AlbumDetail = ({albumArtist, albumTitle, albumImage, albumThumbnail, albumUrl}) => {
+
+	return (<Text>Album Detail</Text>)
 }
 
 export default AlbumDetail
