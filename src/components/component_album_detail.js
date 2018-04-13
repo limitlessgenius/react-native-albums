@@ -34,18 +34,18 @@ const styles = {
 		flexDirection: 'column', 
 
 	}, 
-	textTitleStyle: {
-		fontSize: 20, 
-		fontWeigth: 'bold',
-		margin: 5, 
-
-	}, 
-	textArtistStyle: {
-		padding: 5
-	}, 
 	imageStyle: {
 		width: 200, 
 		height:170, 
+	}, 
+	textTitleStyle: {
+		fontSize: 20, 
+		fontWeigth: 'bold',
+		padding: 5, 
+
+	}, 
+	textArtistStyle: {
+		padding: 5, 
 	}, 
 }
 
