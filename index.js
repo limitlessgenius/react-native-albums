@@ -7,13 +7,17 @@ import AlbumList from './src/components/component_album_list'
 
 // Create a component
 
-const App = () => (
-	<View>
-		<Header headerText={'Albums'} />
-		<AlbumList />
-	</View>		
-)
+const App = () => {
 
+	const albumHeader = 'Albums'
+
+	return (
+		<View>
+			<Header headerText={albumHeader} />
+			<AlbumList />
+		</View>	
+	)	
+}
 	
 //Implicit return if only return JSX	
 AppRegistry.registerComponent('ReactNativeAlbums', () => App)
