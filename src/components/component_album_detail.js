@@ -50,7 +50,9 @@ const AlbumDetail = ({album}) => {
 			</CardSection>
 
 			<CardSection>
-				<Button onPress={() => onPressHandler()} />
+				<Button onPress={() => onPressHandler()}>
+					BUY
+				</Button>
 			</CardSection>
 
 
