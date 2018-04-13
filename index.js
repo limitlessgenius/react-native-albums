@@ -12,7 +12,7 @@ const App = () => {
 	const albumHeader = 'Albums'
 
 	return (
-		<View>
+		<View style={{ flex: 1 }}>
 			<Header headerText={albumHeader} />
 			<AlbumList />
 		</View>	
