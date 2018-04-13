@@ -4,6 +4,7 @@
 This project is my first React Native application. 
 
 The products provides a nice and interactive layout of albums fetched from a provided API utilizing native fetch method and along with allowing for a quick check of related information, already allows you to buy the specified album right away - therefore showing its real utility. 
+I have also followed best practices on fabricating reusable components (Button) with a changeable onPress handler. 
 
 ### Product
 
