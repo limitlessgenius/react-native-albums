@@ -35,6 +35,7 @@ const AlbumDetail = ({album}) => {
 					<Text style={textArtistStyle}>{artist}</Text>
 				</View>
 			</CardSection>
+
 			<CardSection>
 					<Image
 					source={{uri:image}}
@@ -43,7 +44,9 @@ const AlbumDetail = ({album}) => {
 			</CardSection>
 
 			<CardSection>
-				<Button />
+
+				<Button onPress={() => console.log('CLICK')} />
+				
 			</CardSection>
 		</Card>
 	)
@@ -78,5 +81,7 @@ const styles = {
 
 
 export default AlbumDetail
+
+
 
 
