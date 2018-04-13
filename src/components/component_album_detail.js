@@ -23,13 +23,12 @@ const AlbumDetail = ({album}) => {
 		thumbnailStyle, 
 		thumbnailContainerStyle } = styles
 
-	const onPressHandler = () => {
-
-		Linking.openURL(url)
-	}
+	const onPressHandler = () => Linking.openURL(url) 
 
 	return (
 		<Card>
+
+
 			<CardSection>
 				<View style={thumbnailContainerStyle}>
 					<Image 
@@ -51,11 +50,10 @@ const AlbumDetail = ({album}) => {
 			</CardSection>
 
 			<CardSection>
-
-				<Button onPress={() => onPressHandler()} 
-				/>
-				
+				<Button onPress={() => onPressHandler()} />
 			</CardSection>
+
+
 		</Card>
 	)
 }
