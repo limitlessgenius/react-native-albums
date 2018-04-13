@@ -8,11 +8,13 @@ import CardSection from './component_card_section'
 
 import Button from './component_button'
 
+import { Linking } from 'react-native'
+
 // const album = props.album
 const AlbumDetail = ({album}) => {
 
 	//Importance of destructuring plus making in arguments on site as album: { further_prop }
-	const { title, artist, thumbnail_image, image } = album
+	const { title, artist, thumbnail_image, image, url } = album
 	const { 
 		imageStyle, 
 		textTitleStyle, 
@@ -20,6 +22,11 @@ const AlbumDetail = ({album}) => {
 		textContainerStyle, 
 		thumbnailStyle, 
 		thumbnailContainerStyle } = styles
+
+	const onPressHandler = () => {
+
+		Linking.openURL(url)
+	}
 
 	return (
 		<Card>
@@ -45,7 +52,8 @@ const AlbumDetail = ({album}) => {
 
 			<CardSection>
 
-				<Button onPress={() => console.log('CLICK')} />
+				<Button onPress={() => onPressHandler()} 
+				/>
 				
 			</CardSection>
 		</Card>
