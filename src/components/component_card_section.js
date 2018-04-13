@@ -15,8 +15,8 @@ const styles = {
 		borderBottomWidth: 1, 
 		padding: 5, 
 		backgroundColor: '#fff', 
+		'justifyContent': 'flex-start', 
 		flexDirection: 'row', 
-		alignItems: 'flex-start', 
 		borderColor: '#ddd', 
 		position: 'relative', 
 	}

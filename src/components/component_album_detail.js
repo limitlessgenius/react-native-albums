@@ -11,10 +11,13 @@ const AlbumDetail = (props) => {
 	return (
 		<Card>
 			<CardSection>
-				<Image 
+
+				<View style={styles.imageStyle}>
+					<Image 
 					source={{uri:props.album.image}} 
 					style={styles.imageStyle}
-				/>
+					/>
+				</View>
 				<View style={styles.textViewStyle}>
 					<Text style={styles.textTitleStyle}>{props.album.title}</Text>
 					<Text style={styles.textArtistStyle}>{props.album.artist}</Text>
@@ -26,16 +29,19 @@ const AlbumDetail = (props) => {
 
 const styles = {
 	textViewStyle: {
-		alignItems: 'flex-end', 
+		justifyContent: 'center', 
+		marginLeft: 10, 
+		flexDirection: 'column', 
 
 	}, 
 	textTitleStyle: {
 		fontSize: 20, 
 		fontWeigth: 'bold',
+		margin: 5, 
 
 	}, 
 	textArtistStyle: {
-
+		padding: 5
 	}, 
 	imageStyle: {
 		width: 200, 
